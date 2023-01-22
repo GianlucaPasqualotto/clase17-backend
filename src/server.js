@@ -11,3 +11,13 @@ app.get("/",(req,res)=>{
 app.get("/home",(req,res)=>{
     res.send("<h1>Bienvenido</h1>")
 });
+
+app.get("/users",(req,res)=>{
+    res.json({
+        users:[
+            {username:"gian"},
+            {username:"enzo"},
+            {username:"maxi"}
+        ]
+    })
+})
