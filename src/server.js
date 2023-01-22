@@ -11,3 +11,7 @@ app.get("/",(req,res)=>{
 app.get("/home",(req,res)=>{
     res.send("<h1>Bienvenido</h1>")
 });
+
+app.get("/home",(req,res)=>{
+    res.send("<h1>Bienvenido al chat</h1>")
+});
